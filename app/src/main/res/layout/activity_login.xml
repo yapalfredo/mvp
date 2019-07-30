@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity">
+
+<EditText
+    android:id="@+id/etTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Title"/>
+
+    <EditText
+    android:id="@+id/etSubtitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Subtitle"
+        android:layout_below="@+id/etTitle"/>
+    <Button
+        android:id="@+id/btnButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_below="@id/etSubtitle"
+        android:onClick="onClickLogin"/>
+    <TextView
+        android:id="@+id/textView"
+        android:hint="textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnButton"/>
+</RelativeLayout>
