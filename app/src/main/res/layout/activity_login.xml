@@ -22,13 +22,20 @@
         android:id="@+id/btnButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Put"
         android:layout_below="@id/etSubtitle"
+        android:onClick="onClickLogin"/>
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get"
+        android:layout_below="@id/btnButton"
         android:onClick="onClickLogin"/>
     <TextView
         android:id="@+id/textView"
         android:hint="textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnButton"/>
+        android:layout_below="@id/btnGet"/>
 </RelativeLayout>

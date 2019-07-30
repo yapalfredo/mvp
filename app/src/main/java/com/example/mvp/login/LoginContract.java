@@ -8,6 +8,8 @@ public interface LoginContract {
     
     interface Presenter{
         void onClick(String title, String subtitle);
+
+        void getNote();
     }
     
 }
