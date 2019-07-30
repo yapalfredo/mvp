@@ -11,11 +11,9 @@ import com.example.mvp.R;
 import java.nio.file.Files;
 
 public class LoginActivity extends AppCompatActivity implements LoginContract.View{
-
-
     LoginContract.Presenter presenter;
-    EditText titleEditText
-            , subEditText;
+
+    EditText titleEditText, subEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
