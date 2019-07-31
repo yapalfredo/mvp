@@ -9,8 +9,6 @@ import android.widget.TextView;
 
 import com.example.mvp.R;
 
-import java.nio.file.Files;
-
 public class LoginActivity extends AppCompatActivity implements LoginContract.View{
 
 
@@ -32,7 +30,7 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
     public void onClickLogin(View view) {
 
         switch (view.getId()) {
-            case R.id.btnButton:
+            case R.id.btnPut:
                 //presenter -> somebody clicked the button
 
                 String title = titleEditText.getText().toString();

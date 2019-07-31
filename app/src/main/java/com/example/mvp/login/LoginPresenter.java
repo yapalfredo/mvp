@@ -10,14 +10,15 @@ public class LoginPresenter implements LoginContract.Presenter, NotesDataSource.
 
     public LoginPresenter(LoginActivity loginActivity) {
         view = loginActivity;
-        repository = new NotesRepository(); //2a
+        repository = new NotesRepository(loginActivity); //2a
     }
 
     @Override
     public void onClick(String title, String subtitle) {
 
         //presenter -> hey mr view please set the text
-        view.setText(title, subtitle);
+        //view.setText(title, subtitle);
+        repository.putNote(new Note(title,subtitle));
     }
 
     @Override

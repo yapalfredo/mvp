@@ -6,36 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".login.LoginActivity">
 
-<EditText
-    android:id="@+id/etTitle"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Title"/>
-
     <EditText
-    android:id="@+id/etSubtitle"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Subtitle"
-        android:layout_below="@+id/etTitle"/>
-    <Button
-        android:id="@+id/btnButton"
+        android:id="@+id/etTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Put"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/etSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTitle"
+        android:hint="Subtitle" />
+
+    <Button
+        android:id="@+id/btnPut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/etSubtitle"
-        android:onClick="onClickLogin"/>
+        android:onClick="onClickLogin"
+        android:text="Put" />
+
     <Button
         android:id="@+id/btnGet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Get"
-        android:layout_below="@id/btnButton"
-        android:onClick="onClickLogin"/>
+        android:layout_below="@id/btnPut"
+        android:onClick="onClickLogin"
+        android:text="Get" />
+
     <TextView
         android:id="@+id/textView"
-        android:hint="textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnGet"/>
+        android:layout_below="@id/btnGet"
+        android:hint="textview" />
 </RelativeLayout>
