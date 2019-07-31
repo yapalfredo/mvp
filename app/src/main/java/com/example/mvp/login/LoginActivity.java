@@ -35,7 +35,8 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
 
                 String title = titleEditText.getText().toString();
                 String subtitle = subEditText.getText().toString();
-
+                titleEditText.setText("");
+                subEditText.setText("");
                 presenter.onClick(title, subtitle);
                 break;
 
